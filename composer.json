@@ -1,0 +1,28 @@
+{
+  "name": "robert-pritzkow/sushi-bar",
+  "type": "project",
+  "description": "A simple project for managing a running sushi bar",
+  "authors": [
+    {
+      "name": "Robert Pritzkow",
+      "email": "robert.pritzkow@posteo.de"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "SushiBar\\": "src/app/SushiBar"
+    }
+  },
+  "scripts":{
+    "dev-server": "php -S localhost:3000 -t web",
+    "lint": "psalm"
+  },
+  "require": {
+    "php": ">=7.1",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "vimeo/psalm": "^4.7"
+  },
+  "license": "MIT"
+}
